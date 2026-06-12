@@ -23,8 +23,16 @@
 ```bash
 python train_fewshot_siglip2.py \
     --source_data /path/to/dataset/train \
-    --target_data /path/to/dataset/test \
+    --target_data /path/to/dataset/val \
     --epochs 40 \
     --n_way 5 \
     --k_shot 5 \
     --q_query 15
+```
+
+```bash
+python test_fewshot.py \
+    --test_data /path/to/dataset/test \
+    --weights checkpoints/model.pth \
+    --test_episodes 5 \
+    --n_way 5
