@@ -15,9 +15,24 @@
 
 ---
 
-## 📂 2. 快速啟動 (Quick Start)
 
-### A. 執行知識蒸餾與 URM 訓練
+## 🛠️ 2. 環境建置 (Environment Setup)
+
+使用 Conda 來還原獨立的 Python 執行環境。已將所有需要的深度學習套件（包含 PyTorch 2.6.0、CUDA 11.8、Mamba-SSM 與 SigLIP2 依賴）打包在 `environment.yml` 中。
+
+請在專案根目錄下的終端機執行以下指令：
+
+```bash
+# 1. 透過 environment.yml 一鍵建立虛擬環境 (依網路速度約需 5~15 分鐘)
+conda env create -f environment.yml
+
+# 2. 啟動虛擬環境
+conda activate urm_mamba
+```
+
+## 📂 3. 快速啟動 (Quick Start)
+
+### 執行知識蒸餾與 URM 訓練
 使用最新的 SigLIP2 腳本啟動 Episodic 訓練（以 5-Way 5-Shot 為例）：
 
 ```bash
