@@ -46,7 +46,7 @@ python train_fewshot_siglip2.py \
 ```
 
 ```bash
-python test_fewshot.py \
+python test_fewshot_siglip2.py \
     --test_data /path/to/dataset/test \
     --weights checkpoints/model.pth \
     --test_episodes 5 \
